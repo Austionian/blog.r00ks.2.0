@@ -29,6 +29,10 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#47c3fb" media="(prefers-color-scheme: light)" />
           <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** "
+          />
           <meta charSet="UTF-8" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
